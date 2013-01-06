@@ -1,0 +1,43 @@
+/* 
+    Document   : style.css
+    Created on : 2013.4.1, 23:46:32
+    Author     : Kristaps
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#user_side {
+    border: 1px solid #000;
+    width: 200px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+#chat {
+    border: 1px solid #000;
+    width: 490px;
+    height: 500px;
+}
+
+#profile_info {
+    border: 1px solid #000;
+    width: 200px;
+    height: 500px;
+}
+
+.content_1,
+.content_2,
+#login,
+#register {
+    display: inline-block;
+    float: left;
+}
+
+.content_1 {
+    margin-right: 10px;
+}
+

@@ -75,6 +75,9 @@ return array(
 		 * Global allow by assigning true to a role (use with care!):
 		 *   'super' => true,
 		 */
+            '#'  => array('chat' => array('signup')),
+            'user'  => array('chat' => array('write', 'read', 'edit')),
+            'moderator'  => array('chat' => array('kick', 'update')),
 	),
 
 	/**

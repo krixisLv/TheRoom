@@ -21,6 +21,6 @@
 
 return array(
 	'driver' => 'SimpleAuth',
-	'verify_multiple_logins' => false,
+	'verify_multiple_logins' => true,
 	'salt' => 'put_your_salt_here',
 );
