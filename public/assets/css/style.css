@@ -14,7 +14,7 @@ root {
     border: 1px solid #000;
     width: 200px;
     height: 500px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #chat {
@@ -25,7 +25,7 @@ root {
 
 #profile_info {
     border: 1px solid #000;
-    width: 220px;
+    width: 230px;
     height: 500px;
 }
 

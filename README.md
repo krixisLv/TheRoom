@@ -5,7 +5,13 @@
 ## Description
 
 This is website being developed as a web technologies course assignment using FuelPHP. Online Chatting application.
-So far the login system is up. Visual appearance awful!!
+TO DO LIST:
+	login system - works!
+	chat - messageFetch and messageThrow - works!
+	online user list refresh - works!
+	profile info submit - works!
+	front page CSS design - 
+	main page CSS design -
 
 ##Development Team
 
