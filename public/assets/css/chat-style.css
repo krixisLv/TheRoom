@@ -1,5 +1,5 @@
 body {
-    font: 0.8em Arial;
+    font-size: 0.8em;
 }
 
 .chat .messages {
@@ -8,6 +8,7 @@ body {
     height: 415px;
     padding: 10px;
     overflow-y: scroll;
+    font-family: Arial;
 }
 
 .chat .message a{

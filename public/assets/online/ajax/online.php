@@ -12,6 +12,7 @@ if (isset($_POST['method']) === true and empty($_POST['method']) === false) {
         } else {
             ?>
             <div class="users">
+                <h4>USERS ONLINE</h4>
                 <?php foreach ($users as $user) { ?>
                     <?php if ($user['group'] == 1) { ?>
                         <h5><?php echo $user['name']; ?> </h5>
@@ -21,6 +22,7 @@ if (isset($_POST['method']) === true and empty($_POST['method']) === false) {
                 ?>
             </div>
             <div class="users mods">
+                <h4>ADMINS ONLINE</h4>
                 <?php foreach ($users as $user) { ?>
                     <?php if ($user['group'] == 50) { ?>
                         <h5><?php echo $user['name']; ?> </h5>

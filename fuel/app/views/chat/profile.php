@@ -13,10 +13,10 @@
             ?>"/></div>
     <div class="user-info">
         <h4><?php if(isset($information[0]['firstName']) and !empty($information[0]['firstName'])) echo 'FIRST NAME:'; ?></h4>
-        <?php if(isset($information[0]['firstName'])) echo $information[0]['firstName']; ?></div>
+        <p><?php if(isset($information[0]['firstName'])) echo $information[0]['firstName']; ?></p></div>
     <div class="user-info">
         <h4><?php if(isset($information[0]['lastName']) and !empty($information[0]['lastName'])) echo 'LAST NAME:'; ?></h4>
-        <?php if(isset($information[0]['lastName'])) echo $information[0]['lastName']; ?></div>
+        <p><?php if(isset($information[0]['lastName'])) echo $information[0]['lastName']; ?></p></div>
     <?php echo $info; ?>
     <?php 
 //        $auth = Auth::instance();

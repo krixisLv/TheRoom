@@ -11,6 +11,7 @@
         <?php echo Asset::js('jquery-1.8.3.js'); ?>
 	<?php echo Asset::css('bootstrap.css'); ?>
         <?php echo Asset::css('style.css'); ?>
+        <?php echo Asset::css('head.css'); ?>
         <?php echo Asset::css('chat-style.css'); ?>
 	<style>
 		body { margin: 40px; }
@@ -19,7 +20,15 @@
     <body>
 	<div class="container">
 			<div>
-				<h1><?php echo $title; ?></h1>
+                            <header id="head">
+                                <div id="gears">
+                                        <img id="gear1" src="http://localhost/Demo/public/assets/css/gear1.png" alt="gear"/>
+                                        <img id="gear2" src="http://localhost/Demo/public/assets/css/gear2.png" alt="gear"/>
+                                        <img id="gear3" src="http://localhost/Demo/public/assets/css/gear3.png" alt="gear"/>
+                                </div>
+                                <a href=""><img id="logo" src="http://localhost/Demo/public/assets/css/logo.png" alt="logo"/></a>
+                                
+                            </header>
                                 <aside id="auth">	    
                                     <?php
                                         $auth = Auth::instance();
@@ -63,17 +72,14 @@
                                 <div id="register"><?php if(isset($register))echo $register; ?></div>
                             </div>
                         <?php endif; ?>
-		<div>
-			<p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
+            <footer>
+            <p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
 			<p>
 				<a href="http://fuelphp.com">FuelPHP</a> is released under the MIT license.<br>
 				<small>Version: <?php echo e(Fuel::VERSION); ?></small>
 			</p>
-		<div>
-	</div>
-        <footer>
-            
         </footer>
+	</div>
         <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     </body>
 </html>

@@ -5,7 +5,9 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
+*{
+    font-family: Georgia;
+}
 root { 
     display: block;
 }
@@ -15,18 +17,21 @@ root {
     width: 200px;
     height: 500px;
     margin-left: 5px;
+    font-family: Georgia;
 }
 
 #chat {
     border: 1px solid #000;
     width: 490px;
     height: 500px;
+    font-family: Arial;
 }
 
 #profile_info {
     border: 1px solid #000;
     width: 230px;
     height: 500px;
+    font-family: Georgia;
 }
 
 .content_1,
@@ -41,3 +46,109 @@ root {
     margin-right: 10px;
 }
 
+#login, #register {
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 420px;
+    height: 270px;
+    border: 1px solid #ccc;
+}
+
+#login>p, #register>p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#login {
+    margin-left: 15px;
+}
+
+#register{
+    margin-left: 10px;
+}
+
+#register label{
+    display: inline;
+}
+
+footer{
+    width: 900px;
+    display: block;
+    clear: none;
+    margin-left: 20px;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: #5bb75b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#profile_info>p{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#profile_info h4{
+    margin-left: 10px;
+}
+
+#profile_info form{
+    margin-top: 50px;
+}
+
+.user-info>p, .user-info>img {
+    margin-left: 80px;
+}
+
+.user-info>p{
+    color: #bbb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#user_side>div{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#user_side h4{
+    margin-bottom: 7px;
+}
+
+#user_side h5{
+    font-size: 14px;
+    color: #777;
+}
+
+.users h5{
+    height: 20px;
+    background-image: url('user.png');
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+.users.mods h5{
+    height: 20px;
+    background-image: url('admin.png');
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+#auth {
+    float: right;
+    position: relative;
+    top: -30px;
+    left: 10px;
+    margin-bottom: -30px;
+}

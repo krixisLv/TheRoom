@@ -1,17 +1,21 @@
 #TheRoom
 
-* Version: 2.0
+* Version: 2.1
 
 ## Description
 
 This is website being developed as a web technologies course assignment using FuelPHP. Online Chatting application.
-TO DO LIST:
-	login system - works!
-	chat - messageFetch and messageThrow - works!
-	online user list refresh - works!
-	profile info submit - works!
-	front page CSS design - 
-	main page CSS design -
+<p>TO DO LIST:
+<ol>
+	<li>login system - works!</li>
+	<li>chat - messageFetch and messageThrow - works!</li>
+	<li>online user list refresh - works!</li>
+	<li>profile info submit - works!</li>
+	<li>front page CSS design - done!</li>
+	<li>main page CSS design - done!</li>
+	</ol>
+	</p>
+Added sql script for database generation THE_ROOM.sql
 
 ##Development Team
 

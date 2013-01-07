@@ -31,9 +31,9 @@ class Controller_Users extends Controller_Template {
                 
                 Session::set_flash('success', 'Successfully logged in! Welcome ' . $auth->get_screen_name());
                 Response::redirect('chat/');
-            }
-            if ($result['e_found']) {
+            }else if (isset($result['e_found'])) {
                 $view_reg = View::forge('users/register');
+                $view_login = View::forge('users/login');
                 Session::set_flash('error', 'Username or password incorrect! Or you can register and become one of us for FREE!');
                 $view_reg->set('errors', $result['errors'], false);
             }

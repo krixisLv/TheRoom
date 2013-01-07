@@ -30,7 +30,7 @@ class Controller_Chat extends Controller_Template {
             $form_info->repopulate();
             if(empty($information)){
                 $new = new Model_Orm_Info();
-                $new->uid = $user_id[0];
+                $new->uid = $user_id[1];
                 $new->firstName = Input::post('firstName');
                 $new->lastName = Input::post('lastName');
                 $new->picture = Input::post('picture');
