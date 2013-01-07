@@ -9,11 +9,9 @@
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
         <?php echo Asset::js('jquery-1.8.3.js'); ?>
-        <!--<?php //echo Asset::js('chat.js'); ?>
-        <script type="text/javascript" src="http://localhost/Demo/public/chat/chat.js"></script>-->
 	<?php echo Asset::css('bootstrap.css'); ?>
         <?php echo Asset::css('style.css'); ?>
-        <?php echo Asset::css('styles.css'); ?>
+        <?php echo Asset::css('chat-style.css'); ?>
 	<style>
 		body { margin: 40px; }
 	</style>

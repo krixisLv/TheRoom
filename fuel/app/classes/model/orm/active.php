@@ -15,7 +15,7 @@ class Model_Orm_Active extends Orm\Model {
     protected static $_observers = array(
             'Orm\Observer_UpdatedAt' => array(
                     'events' => array('before_save'),
-                    'mysql_timestamp' => false,
+                    'mysql_timestamp' => true,
             ),
     );
     public static function check_active()

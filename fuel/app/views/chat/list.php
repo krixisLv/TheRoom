@@ -1,23 +1,4 @@
 <div id="user_side">
-    <?php foreach ($chat_users as $user) : ?>
-        <h5>
-            <?php
-                echo $user;
-            ?>
-        </h5> 
-    <?php endforeach;?>
-    <?php foreach ($chat_mods as $user) : ?>
-        <h5>
-            <?php
-                echo $user;
-            ?>
-        </h5> 
-    <?php endforeach;?>
-    <?php foreach ($sleep_users as $user) : ?>
-        <h2>
-            <?php
-                echo $user;
-            ?>
-        </h2> 
-    <?php endforeach;?>
 </div>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="http://localhost/Demo/public/assets/js/online.js"></script>

@@ -3,6 +3,10 @@
 class Controller_Users extends Controller_Template {
 
     public function action_index() {
+        if (Auth::has_access('chat.read')){
+            Response::redirect('chat/index');
+        }
+        
         $view_login = View::forge('users/login');
         $form_login = Fieldset::forge('login');
         $form_login->add('username', 'Username:');
@@ -18,11 +22,10 @@ class Controller_Users extends Controller_Template {
             $form_reg->repopulate();
             $form_login->repopulate();
             $result = Model_Orm_User::validate_registration($form_reg, $auth);
-            if ($auth->login(Input::post('username'), Input::post('password'))) {
-                
+            if ($auth->login(htmlentities(Input::post('username')), Input::post('password'))) {
                 $new = new Model_Orm_Active();
                 $name = $auth->get_screen_name();
-                $new->name = $name;
+                $new->name = htmlentities($name);
                 $group = Model_Orm_User::get_group($name);
                 $new->group = $group;
                 $new->save();

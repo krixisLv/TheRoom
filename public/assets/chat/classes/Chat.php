@@ -23,6 +23,7 @@ class Chat extends Core{
             INSERT INTO messages (uid, message, created_at)
             VALUES ( '$user_id' , '$message', CURRENT_TIMESTAMP)
             ");
+
         //$this->db->real_escape_string(htmlentities($message)) 
     }
 }
