@@ -9,8 +9,11 @@
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
         <?php echo Asset::js('jquery-1.8.3.js'); ?>
+        <!--<?php //echo Asset::js('chat.js'); ?>
+        <script type="text/javascript" src="http://localhost/Demo/public/chat/chat.js"></script>-->
 	<?php echo Asset::css('bootstrap.css'); ?>
         <?php echo Asset::css('style.css'); ?>
+        <?php echo Asset::css('styles.css'); ?>
 	<style>
 		body { margin: 40px; }
 	</style>
@@ -34,19 +37,6 @@
                                     <?php endif; ?>
                                 </aside>
 				<hr>
-				<?php
-//					if(isset($user_info))
-//					{
-//						echo $user_info;
-//					}else{
-//						if(Auth::instance()->check()){
-//							$link = array("Logged in as: ".Auth::instance()->get_screen_name(), Html::anchor('users/logout', 'Logout'));
-//						}else{
-//							$link = array(Html::anchor('users/login', 'Login'), Html::anchor('users/register', 'Register'));
-//						}
-//						echo Html::ul($link);
-//					}
-//				?>
                         <?php if (Session::get_flash('success')): ?>
 				<div class="alert-message success">
 					<p>
@@ -86,5 +76,6 @@
         <footer>
             
         </footer>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     </body>
 </html>
