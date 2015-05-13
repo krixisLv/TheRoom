@@ -19,4 +19,4 @@ Added sql script for database generation THE_ROOM.sql
 
 ##Development Team
 
-Kristaps Straumens - Developer
+Kristaps - Developer
